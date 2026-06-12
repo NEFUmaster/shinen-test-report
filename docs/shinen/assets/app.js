@@ -80,8 +80,8 @@ function renderReports() {
               <span>上传时间：${formatDate(report.createdAt)}</span>
             </div>
             <div class="report-actions">
-              <a href="/shinen/uploads/${encodeURIComponent(report.filename)}" target="_blank" rel="noreferrer">预览</a>
-              <a href="/shinen/uploads/${encodeURIComponent(report.filename)}" download>下载</a>
+              <a href="uploads/${encodeURIComponent(report.filename)}" target="_blank" rel="noreferrer">预览</a>
+              <a href="uploads/${encodeURIComponent(report.filename)}" download>下载</a>
             </div>
           </article>
         `).join("")}
@@ -91,9 +91,8 @@ function renderReports() {
 }
 
 async function loadReports() {
-  const response = await fetch("/shinen/api/reports");
-  const data = await response.json();
-  state.reports = data.reports || [];
+  const response = await fetch("data/reports.json");
+  state.reports = await response.json();
   renderTabs();
   renderReports();
 }
