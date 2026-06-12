@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理 - 象恩检测报告中心</title>
+    <link rel="stylesheet" href="/shinen/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">后台管理</p>
+        <h1>检测报告维护</h1>
+      </div>
+      <a class="admin-link" href="/shinen/">返回前台</a>
+    </header>
+
+    <main class="layout admin-layout">
+      <section class="panel">
+        <h2>上传新报告</h2>
+        <form id="uploadForm" class="upload-form">
+          <label>
+            报告标题
+            <input name="title" type="text" placeholder="例如：象恩全价主食浓汤检测报告">
+          </label>
+          <label>
+            分类
+            <input name="category" type="text" placeholder="例如：主食浓汤">
+          </label>
+          <label>
+            说明
+            <input name="description" type="text" placeholder="可选">
+          </label>
+          <label>
+            PDF 文件
+            <input name="file" type="file" accept="application/pdf,.pdf" required>
+          </label>
+          <button type="submit">上传报告</button>
+        </form>
+        <p id="uploadMessage" class="form-message" role="status"></p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>已上传报告</h2>
+          <button id="refreshButton" type="button" class="ghost-button">刷新</button>
+        </div>
+        <div id="adminList" class="admin-list"></div>
+      </section>
+    </main>
+
+    <script src="/shinen/assets/admin.js"></script>
+  </body>
+</html>

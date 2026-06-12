@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>象恩检测报告中心</title>
+    <link rel="stylesheet" href="/shinen/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">PDF 检测报告</p>
+        <h1>象恩检测报告中心</h1>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="toolbar" aria-label="筛选工具">
+        <div class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索报告名称、分类或说明">
+        </div>
+        <div id="categoryTabs" class="tabs"></div>
+      </section>
+
+      <section class="summary-band">
+        <div>
+          <strong id="totalCount">0</strong>
+          <span>份报告</span>
+        </div>
+        <div>
+          <strong id="categoryCount">0</strong>
+          <span>个分类</span>
+        </div>
+      </section>
+
+      <section id="reportGroups" class="report-groups" aria-live="polite"></section>
+      <p id="emptyState" class="empty-state" hidden>暂无匹配的检测报告。</p>
+    </main>
+
+    <script src="/shinen/assets/app.js"></script>
+  </body>
+</html>
