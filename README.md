@@ -1,4 +1,4 @@
-# 象恩检测报告静态网页
+# Shinen Test Report
 
 这是一个纯静态 PDF 检测报告展示网页，适合部署到 Cloudflare Pages、GitHub Pages 等免费静态托管平台。
 
@@ -39,7 +39,7 @@ docs
 部署完成后，Cloudflare 会给出一个公网地址，例如：
 
 ```text
-https://你的项目名.pages.dev/shinen/
+https://shinen-test-report.pages.dev/shinen/
 ```
 
 ## GitHub Pages 部署
