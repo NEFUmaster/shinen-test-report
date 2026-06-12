@@ -4,7 +4,13 @@
 
 ## 访问路径
 
-部署后：
+当前已部署地址：
+
+```text
+https://nefumaster.github.io/shinen-test-report/shinen/
+```
+
+路径说明：
 
 - 根路径会自动跳转到 `./shinen/`
 - 前台展示页：`/shinen/`
@@ -27,7 +33,7 @@ http://127.0.0.1:8000/shinen/
 ## Cloudflare Pages 部署
 
 1. 打开 Cloudflare Pages。
-2. 连接 GitHub 仓库：`NEFUmaster/shinen-report-site`。
+2. 连接 GitHub 仓库：`NEFUmaster/shinen-test-report`。
 3. Framework preset 选择 `None`。
 4. Build command 留空。
 5. Build output directory 填写：
@@ -51,10 +57,10 @@ https://shinen-test-report.pages.dev/shinen/
 5. Folder 选择 `/docs`。
 6. 保存。
 
-部署完成后，地址通常是：
+当前 GitHub Pages 地址：
 
 ```text
-https://nefUmaster.github.io/shinen-report-site/shinen/
+https://nefumaster.github.io/shinen-test-report/shinen/
 ```
 
 ## 如何更新报告
